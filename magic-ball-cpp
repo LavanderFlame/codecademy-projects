@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstdlib>
+
+int main() {
+
+  // Your future is here
+  std::cout << "MAGIC 8-BALL\n";
+  
+srand(time(NULL));
+int answer = std::rand() % 10;
+
+std::string fortune[]{
+    "You will have a great day!",
+    "Beware of falling pianos!",
+    "A surprise gift is coming your way!",
+    "An old friend will reach out soon.",
+    "Your coffee will be perfect tomorrow morning.",
+    "You will learn something that changes your life.",
+    "Beware… of geese.",
+    "You will find money in an unexpected place.",
+    "The next song you hear will become your new favorite."
+};
+
+std::cout << fortune[answer] << "\n";
+}
+
+
+
+
