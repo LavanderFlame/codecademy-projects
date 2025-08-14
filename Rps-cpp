@@ -1,0 +1,53 @@
+//RPS in C++
+
+#include <iostream>
+#include <stdlib.h>
+
+//plays a cringe ass version of rock paper scissors
+
+int main() {
+  
+  // Live long and prosper
+srand (time(NULL));
+int computer = rand() % 3 + 1;
+int user;
+
+std::cout << "====================\n";
+std::cout << "rock paper scissors!\n";
+std::cout << "====================\n";
+
+std::cout << "1) ✊\n";
+std::cout << "2) ✋\n";
+std::cout << "3) ✌️\n";
+
+std::cout << "shoot! Pick a number 1-3! ";
+std::cin >> user;
+
+//rock 
+if(user == 1 && computer == 3){
+  std::cout << "Congrats! You won!\n";
+}else if (user == 1 && computer == 2){
+  std::cout << "Oh no! Better luck next time!\n";
+}else if(user == computer){
+  std::cout << "It seems that there's a tie. Try again!";
+};
+
+//paper
+if(user == 2 && computer == 1){
+  std::cout << "Congrats! You won!\n";
+}else if (user == 2 && computer == 3){
+  std::cout << "Oh no! Better luck next time!\n";
+}else if(user == computer){
+  std::cout << "It seems that there's a tie. Try again!";
+};
+
+//scissors
+if(user == 3 && computer == 2){
+  std::cout << "Congrats! You won!\n";
+}else if (user == 3 && computer == 1){
+  std::cout << "Oh no! Better luck next time!\n";
+}else if(user == computer){
+  std::cout << "It seems that there's a tie. Try again!";
+}
+  
+}
